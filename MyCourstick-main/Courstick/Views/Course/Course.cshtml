@@ -1,0 +1,117 @@
+@model Courstick.Core.Dto.CourseDto
+
+@{
+    ViewData["Title"] = Model?.Name;
+}
+
+<div class="main_block_colored">
+    <div class="main_container">
+        <div class="coursepage-title">
+            @{
+                if (Model.Image is not null && Model.Image.Length > 0)
+                {
+                    var imreBase64Data = Convert.ToBase64String(Model?.Image);  
+                    var imgDataURL = string.Format("data:image/jpg;base64,{0}", imreBase64Data);  
+                    <img src="@imgDataURL" class="course-image-preview"/>
+                }
+                else
+                {
+                    <img src="~/assets/1141e3214a1146cfa23e94fb3049e271_ce_640x399x0x255_cropped_666x444.jpeg" class="course-image-preview"/>
+                }
+            }
+            <p class="subline-courses">Курс</p>
+            <h1 style="margin-top: 6px">@Model?.Name</h1>
+        </div>
+    </div>
+</div>
+
+<div class="main_block_white">
+    <div class="main_container">
+        <div class="coursepage-content">
+            <div class="about-course-block">
+                <div class="about-course">
+                    <h1>
+                        О курсе
+                    </h1>
+
+                    <p class="course-description">@Model?.Description</p>
+                </div>
+
+                <div class="buy-block">
+                    <div class="buy-container">
+                        <p class="buy-title">
+                            Продолжительность
+                        </p>
+                        <p class="buy-price">
+                            @Model!.Lessons!.Count Уроков
+                        </p>
+                    </div>
+
+                    <div class="buy-container">
+                        <p class="buy-title">
+                            Цена
+                        </p>
+                        @if (Model.IsBought)
+                        {
+                            <p class="buy-price">Курс куплен</p>
+                        }
+                        else
+                        {
+                            <p class="buy-price">@Model?.Price ₽</p>
+                        }
+                    </div>
+
+                    <div class="buy-container">
+                        <p class="buy-title">
+                            Оценка
+                        </p>
+
+                        <p class="buy-price">
+                            Курс еще никто не оценил
+                        </p>
+                    </div>
+
+                    @if (Model.IsBought)
+                    {
+                        <a asp-controller="Lessons" asp-action="Lessons" asp-route-id="@Model.CourseId" class="text-center orange-button big-button">
+                            Перейти к обучению
+                        </a>
+                    }
+                    else
+                    {
+                        <button id="open-modal-button" class="orange-button big-button">Присоединиться к курсу</button>
+                    }
+                </div>
+            </div>
+
+            <div class="about-course-block">
+                <div class="description_wrapper">
+                    <p class="subline-courses">Программа курса</p>
+                    <h1 style="margin-top: 6px">Что вам предстоит изучить</h1>
+
+                    <ul>
+                        @foreach (var lesson in Model?.Lessons)
+                        {
+                            <li class="lesson-list-item">
+                                <button class="button-lesson-info">
+                                    @lesson.Movie
+                                </button>
+                            </li>
+                        }
+                    </ul>
+                </div>
+
+                <img src="~/assets/illustration (1).svg"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Html.Partial("Partials/Modals/BuyModal");
+
+@section Scripts
+{
+    <script src="~/js/modalScripts.js"></script>
+}
+
+<link rel="stylesheet" href="~/css/coursePageStyles.css" xmlns="http://www.w3.org/1999/html">

@@ -1,0 +1,93 @@
+.login-container-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    max-width: 480px;
+    background: white;
+    border-radius: 15px;
+    padding: 48px;
+    
+}
+
+.login-container {
+    max-width: 384px;
+}
+
+.login-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #E5E8ED;
+}
+
+.input-wrapper {
+    margin-top: 20px;
+}
+
+.input-form {
+    border: 1px solid rgba(0, 11, 38, 0.16);
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 45px;
+    margin-top: 8px;
+    padding: 0 10px;
+    width: 100%;
+}
+
+.title_login {
+    display: flex;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 32px;
+    justify-content: center;
+}
+
+.submit-form-button {
+    margin-top: 32px;
+    border: none;
+    padding: 12px 0;
+    border-radius: 8px;
+}
+
+.saveme-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.saveme-checkbox input:checked {
+    background: #FF3F3A;
+}
+
+.under-form-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.test {
+    background: black;
+}
+
+a {
+    color: rgba(255, 63, 58, 1);
+}
+
+#reppassword-error, #login-error, #pass-error, #email-error {
+    display: none;
+    font-size: 14px;
+    margin-top: 5px;
+    color: red;
+}
+
+#result_row {
+    display: none;
+    font-size: 14px;
+    margin-top: 5px;
+    color: red;
+}
+
+
+

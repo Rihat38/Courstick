@@ -1,0 +1,81 @@
+.modal_input {
+    width: 70%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 63, 58, 1);
+    font-size: 18px;
+}
+
+.modal_input::placeholder {
+    font-size: 18px;
+}
+
+.modal_input:first-child {
+    margin-top: 0;
+}
+
+.form_settings {
+    margin-top: 25px;
+}
+
+.settings-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.setting-img-upload {
+    margin-top: 8px;
+    max-width: 200px;
+}
+
+.info-block-settings {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.info-block-settings-first-row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #eaeaea;
+    margin-bottom: 5px;
+    margin-top: 12px;
+}
+
+.info-block-settings-first-row:first-child {
+    margin-top: 0;
+}
+
+.button_change_info {
+    border: none;
+    background: none;
+    color: #F75E05;
+}
+
+.button_change_info:hover {
+    opacity: 0.7;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+input[type='text'], input[type='password'], input[type="email"] {
+    display: none;
+}
+
+.input-settings {
+    border-radius: 8px;
+    margin-top: 8px;
+    border: 2px solid rgba(0, 11, 38, 0.16);
+}
+
+#errorEmail, #errorPassword {
+    display: none;
+    font-size: 14px;
+    margin-top: 5px;
+    color: red;
+}

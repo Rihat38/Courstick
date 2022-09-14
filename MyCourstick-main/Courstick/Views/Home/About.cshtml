@@ -1,0 +1,39 @@
+@section Styles {
+    <link rel="stylesheet" href="~/css/about.css" asp-append-version="true"/>
+}
+
+<div class="main_block_white">
+    <div class="main_container">
+        <div class="map_container">
+            <div id="map">
+            </div>
+            <div class="map_info_container">
+                <h1>
+                    Контакты
+                </h1>
+
+                <div class="container_info">
+                    <div class="block_of_info">
+                        <p class="subtitle">Наш адрес</p>
+                        <p>ул. Кремлевская, 35, Казань, Респ. Татарстан, Россия, 420008</p>
+                    </div>
+                    <div class="block_of_info">
+                        <p class="subtitle">Телефон</p>
+                        <p>+79999999999</p>
+                    </div>
+                    <div class="block_of_info">
+                        <p class="subtitle">Почта</p>
+                        <p>courstick@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=4653ee20-c6fc-43c6-bb6d-75792b3fc598&lang=ru_RU" type="text/javascript">
+        </script>
+    <script src="~/js/aboutScript.js"></script>
+}

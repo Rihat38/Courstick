@@ -1,0 +1,24 @@
+﻿[
+  {
+    "outputFileName": "wwwroot/js/aboutScript.min.css",
+    "inputFiles": [
+      "wwwroot/css/aboutScript.css"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/css/about.min.css",
+    "inputFiles": [
+      "wwwroot/css/about.css"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  }
+]

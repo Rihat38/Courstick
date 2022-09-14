@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - Courstick</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="icon" type="image/x-icon" href="~/assets/logo.svg"/>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/Courstick.styles.css" asp-append-version="true"/>
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        @await RenderSectionAsync("Styles", required: false)
+</head>
+<body>
+<div class="wr">
+    <header>
+        <div class="header_wrapper">
+            <div class="half_of_header">
+                <a href="/" class="logo">
+                    COURSTICK
+                    <img src="~/assets/logo.svg" class="logo-img"/>
+                </a>
+                <nav class="header_nav default_font_settings">
+                    <a class="nav_item" asp-area="" asp-controller="Home" asp-action="About">
+                        О нас
+                    </a>
+
+                    <a class="nav_item" asp-area="" asp-controller="Search" asp-action="Search">
+                        Курсы
+                    </a>
+
+                    <a class="nav_item" href="/">
+                        Обратная связь
+                    </a>
+                </nav>
+                
+                
+            </div>
+            <div id="burger-menu">
+                <button class="burger-menu__open-button">
+                    <img class="burger-menu__img" src="~/assets/burgermenu.svg" alt="burger menu"/>
+                </button>
+                
+                <nav class="burger-menu__nav">
+                
+                    <div class="logo">COURSTICK
+                        <img src="~/assets/logo.svg" class="logo-img"/>
+                    </div>
+                    <div class="burger-menu__links-container">
+                        <a class="burger-menu__links" asp-area="" asp-controller="Home" asp-action="About">
+                            О нас
+                        </a>
+                        
+                        
+                        <a class="burger-menu__links" asp-area="" asp-controller="Search" asp-action="Search">
+                            Курсы
+                        </a>
+                        
+                        
+                        <a class="burger-menu__links" href="/">
+                            Обратная связь
+                        </a>
+                        
+                         @if (Context.Session.GetString("login") != null)
+                                    {
+                                        <a class="burger-menu__links" asp-area="" asp-controller="Profile" asp-action="Profile">
+                                            Профиль
+                                        </a>
+                                    }
+                                    else
+                                    {
+                                        <a class="burger-menu__links" asp-area="" asp-controller="Auth" asp-action="Registration">
+                                                Регистрация
+                                            </a>
+                                            <a class="burger-menu__links" asp-area="" asp-controller="Auth" asp-action="Authorization">
+                                                Войти
+                                            </a>
+                                    }
+                         
+                    </div>
+                    
+                </nav>
+                
+                <div class="burger-menu__overlay">
+                    
+                </div>
+            </div>
+            
+            @if (Context.Session.GetString("login") != null)
+            {
+                <a class="full_header big-button orange-button default_font_settings" asp-area="" asp-controller="Profile" asp-action="Profile">
+                    Профиль
+                </a>
+            }
+            else
+            {
+                <div class="full_header half_of_header default_font_settings">
+                    <a class="big-button orange-button default_font_settings" asp-area="" asp-controller="Auth" asp-action="Registration">
+                        Регистрация
+                    </a>
+                    <a class="reg-link" asp-area="" asp-controller="Auth" asp-action="Authorization">
+                        <img style="margin-right: 3px" src="~/assets/reg.svg"/>
+                        Войти
+                    </a>
+                </div>
+            }
+            
+        </div>
+    </header>
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p class="footer-font">
+                © All rights reserved.
+            </p>
+
+            <button class="go-to-top-button">
+                Подняться наверх
+            </button>
+        </div>
+    </footer>
+</div>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/2323f277ec.js" crossorigin="anonymous"></script>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

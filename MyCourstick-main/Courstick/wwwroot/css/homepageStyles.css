@@ -1,0 +1,14 @@
+@media screen and (max-width: 700px) {
+    /*.content-first-block {*/
+    /*    flex-direction: column;*/
+    /*}*/
+    
+    .info-container-first-block {
+        background-image: url("./assets/illustration (1).svg");
+    }
+    
+    
+    /*.people-img {*/
+    /*    display: none;*/
+    /*}*/
+}

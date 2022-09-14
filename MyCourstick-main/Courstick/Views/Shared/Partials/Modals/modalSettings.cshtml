@@ -1,0 +1,87 @@
+<link rel="stylesheet" href="~/css/uiStyles/modalStyles/settingsStyles.css"/>
+<link rel="stylesheet" href="~/css/uiStyles/modalStyles/defaultModalStyles.css"/>
+@model Courstick.Core.Dto.UserInfoDto;
+
+<div id="modal">
+    <div class="modal-content">
+        <div class="modal_first-row">
+            <h2>
+                Настройки
+            </h2>
+
+            <button id="modal_close_button">
+                X
+            </button>
+        </div>
+
+        <form asp-action="ChangeInfo" class="settings-info" enctype="multipart/form-data">
+            @{
+                if (Model?.Image is not null)
+                {
+                    await using var fileStream = Model?.Image.OpenReadStream();
+                    var bytes = new byte[(int)Model?.Image.Length];
+                    await fileStream.ReadAsync(bytes, 0, (int)Model?.Image.Length);
+                    var imreBase64Data = Convert.ToBase64String(bytes);
+                    var imgDataURL = string.Format("data:image/jpg;base64,{0}", imreBase64Data);
+                    <img class="avatar-img" src="@imgDataURL" id="avatar" alt="avatar"/>
+                    <input asp-for="Image" type="file" accept="image/*" class="setting-img-upload" id="fileInput"/>
+                }
+                else
+                {
+                    <img class="avatar-img" style="background: gray" id="avatar"/>
+                    <input asp-for="Image" type="file" accept="image/*" class="setting-img-upload" id="fileInput"/>
+                }
+            }
+            <div class="info-block-settings">
+                <span class="info-block-settings-first-row">
+                    <b>Ваша почта</b>
+                    <button class="button_change_info" id="change-email">
+                        Изменить
+                    </button>
+                </span>
+
+                <p>@ViewBag.email</p>
+                <p id="errorEmail">
+                    Неправильный формат почты
+                </p>
+
+
+                <input asp-for="Email" type="email" id="change-email-input" class="input-settings"/>
+
+                <span class="info-block-settings-first-row" id="change-password">
+                    <b>Ваш пароль</b>
+
+                    <button class="button_change_info" id="change-password">
+                        Изменить
+                    </button>
+                </span>
+
+                <p>********</p>
+
+                <input asp-for="Password" type="password" id="change-password-input" class="input-settings"/>
+                <p id="errorPassword">
+                    Неправильный формат пароля
+                </p>
+
+
+                <span class="info-block-settings-first-row">
+                    <b>Ваш логин</b>
+
+                    <button class="button_change_info" id="change-login">
+                        Изменить
+                    </button>
+                </span>
+
+                <p>@ViewBag.login</p>
+                <input asp-for="Login" type="text" id="change-login-input" class="input-settings"/>
+            </div>
+
+            <button type="submit" class="orange-button big-button" id="submitButton">
+                Сохранить
+            </button>
+        </form>
+    </div>
+</div>
+
+<script src="~/js/ModalSettingsScript.js"></script>
+

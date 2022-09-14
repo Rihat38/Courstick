@@ -1,0 +1,8 @@
+﻿@model Courstick.Core.Dto.UserInfoDto
+
+<h1 class="ms-5 mt-5">Недостаточно средств</h1>
+<button class="ms-5 orange-button big-button w-25" id="balance-button" data-bs-toggle="modal" data-bs-target="#modalBalance">
+    Пополнить баланс
+</button>
+
+@Html.Partial("Partials/Modals/modalBalance")

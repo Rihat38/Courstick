@@ -1,0 +1,35 @@
+@model Courstick.Dto.CourseInfoDto
+
+<a asp-controller="Course" asp-action="Course"  asp-route-id="@Model.Id" class="card-search">
+    <img class="card-image" src="~/assets/1141e3214a1146cfa23e94fb3049e271_ce_640x399x0x255_cropped_666x444.jpeg"/>
+    <div class="card-content">
+        <div class="tag tag-color-cyan">
+            Сварка)
+        </div>
+
+        <p class="course-name">
+            @Model.Name
+        </p>
+
+        <div class="card-price-container">
+            <p class="price">@Model.Price ₽</p>
+        
+                @{
+                    if (Model.Author == null)
+                    {
+                        <div class="card-author-block default_font_settings">
+                            Author
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="card-author-block default_font_settings">
+                            @Model.Author.Name
+                        </div>
+                    }
+                }
+            
+        </div>
+    </div>
+</a>
+

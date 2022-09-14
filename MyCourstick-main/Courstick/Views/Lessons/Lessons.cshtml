@@ -1,0 +1,56 @@
+@using Courstick.Dto
+@using Courstick.Core.Models
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/lessonsStyles.css" asp-append-version="true"/>
+}
+
+<div class="main_block_white">
+    <div class="main_container">
+        <div class="lessons-container">
+            <div class="lesson-container" id="lesson-container-show">
+            </div>
+            <div class="wrapper-lesson-list">
+                <ul class="lesson-list">
+                    <li class="lesson-course-name">
+                        Уроки
+                    </li>
+                    @foreach (Page lesson in ViewBag.lessons)
+                    {
+                        <li>
+                            <button id="@lesson.PageId" class="lesson-list-item">
+                                @lesson.Movie
+                            </button>
+                        </li>
+                    }
+                </ul>
+                <button id="return-button" class="orange-button big-button return-button">
+                    Вернуться
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main_block_gray">
+    <div class="main_container">
+        <h2 class="comment-label">
+            Комментарии
+        </h2>
+
+        <form class="form-comment">
+            <textarea id="text" class="input-comment">
+                            </textarea>
+            <input id="addComment" class="orange-button medium-button" type="submit">
+        </form>
+
+        <div class="comments-container">
+
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script src="~/js/lessonScript.js"></script>
+}

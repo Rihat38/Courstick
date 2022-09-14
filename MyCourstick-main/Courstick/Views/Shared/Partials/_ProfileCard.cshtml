@@ -1,0 +1,29 @@
+@model Courstick.Core.Models.Course
+<a class="card-search" asp-controller="Lessons" asp-action="Lessons" asp-route-id="@Model.CourseId">
+    @if (Model.Image.Length > 0)
+        {
+            var imreBase64Data = Convert.ToBase64String(Model?.Image);
+            var imgDataURL = string.Format("data:image/jpg;base64,{0}", imreBase64Data);
+            <img class="card-image" src="@imgDataURL"/>
+    
+        }
+        else
+        {
+            <img class="card-image" src="~/assets/1141e3214a1146cfa23e94fb3049e271_ce_640x399x0x255_cropped_666x444.jpeg"/>
+        }
+    <div class="card-content">
+        <h5 class="text-center text-warning">
+            @Model.Name
+        </h5>
+
+        <p class="course-name text-center">
+            @Model.SmallDescription
+        </p>
+        <div class="loading">
+        </div>
+    </div>
+</a>
+
+<link rel="stylesheet" href="~/css/uiStyles/cardStyles/cardStyles.css"/>
+<link rel="stylesheet" href="~/css/cards.css"/>
+

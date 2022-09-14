@@ -1,0 +1,36 @@
+﻿<link rel="stylesheet" href="~/css/uiStyles/modalStyles/modalBalanceStyles.css"/>
+@model Courstick.Core.Dto.UserInfoDto;
+
+<div class="modal fade" id="modalBalance" tabindex="-1" aria-labelledby="modalBalanceLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+      <form asp-action="TopUpBalance" asp-controller="Profile" method="post">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalBalanceLabel">Пополнение баланса</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <label for="cn">Номер карты:</label>
+          <input id="cn" type="tel" required class="w-100" regexp maxlength="16" pattern="[0-9]{13,16}" placeholder="xxxx xxxx xxxx xxxx">
+          <div class="row">
+            <div class="col-auto">
+              <label for="dateCard">Действует до:</label>
+              <input id="dateCard" required type="tel" pattern="(0[1-9]|1[012])-[0-9]{4}" placeholder="MM-YYYY" class="w-100">
+            </div>
+            <div class="col-4">
+              <label for="cvv">CVV:</label>
+              <input id="cvv" type="tel" pattern="^[1-9]\d*$" required maxlength="3" minlength="3" class="w-50" placeholder="***">
+            </div>
+          </div>
+          <label for="amount">Сумма в рублях (до 10000):</label>
+          <input id="amount" type="number" class="w-50" min="0" max="10000" name="replenishmentAmount"/>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+          <button type="submit" class="btn btn-warning">Пополнить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+

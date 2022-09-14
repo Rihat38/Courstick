@@ -1,0 +1,8 @@
+.default-button {
+    display: flex;
+    border: none;
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+    border-radius: 4px;
+    padding: 10px 40px;
+    color: white;
+}

@@ -1,0 +1,85 @@
+@model Courstick.Core.Dto.UserInfoDto
+@using Courstick.Core.Models
+@{
+    ViewData["Title"] = "Профиль";
+}
+
+@section Styles
+{
+    <link rel="stylesheet" href="~/css/profileStyles.css" xmlns="http://www.w3.org/1999/html">
+}
+
+<div class="main_block_gray">
+    <div class="main_container">
+        <div class="profile-container">
+            <h1 class="profile-label">Мой кабинет</h1>
+
+            <div class="profile-content">
+                <div class="user-info-container">
+                    @{
+                        if (!ViewBag.Image.Equals(""))
+                        {
+                            <img class="avatar-img" src="@ViewBag.Image" alt="avatar"/>
+
+                        }
+                        else
+                        {
+                            <img class="avatar-img" src="~/assets/1141e3214a1146cfa23e94fb3049e271_ce_640x399x0x255_cropped_666x444.jpeg" alt="avatar"/>
+
+                        }
+                    }
+                    <div class="ms-4 w-100 row justify-content-between">
+                        <div class="col-auto">
+                            <h2>@ViewBag.login</h2>
+                            <form asp-action="LogOut" asp-controller="Profile" method="post">
+                                <button type="submit" class="small-button border-button">Logout</button>
+                            </form>
+                        </div>
+                        <div class="col-auto me-5">
+                            <h4>Ваш баланс: @ViewBag.Balance ₽</h4>
+                            <button class="small-button border-button" id="balance-button" data-bs-toggle="modal" data-bs-target="#modalBalance">
+                                Пополнить баланс
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="extra-profile-container">
+                <ul class="profile-settings">
+                    <li>
+                        <a asp-area="" asp-controller="CourseSettings" asp-action="YourCourses">Ваши курсы</a>
+                    </li>
+                    <li>
+                        <button class="button-links" id="settings-button">Настройки</button>
+                    </li>
+                    <li>
+                        <a href="/">Пройденные курсы</a>
+                    </li>
+                </ul>
+
+                <div class="profile-course">
+                    <div class="courses-first-row">
+                        <h2>Купленные курсы</h2>
+                        <input class="search-container-profile" placeholder="Найдите нужный курс" type="search"/>
+                    </div>
+                    <div class="cards-container">
+                        @foreach (Course course in Model.Courses)
+                        {
+                            @Html.Partial("Partials/_ProfileCard", course)
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Html.Partial("Partials/Modals/modalSettings")
+
+@Html.Partial("Partials/Modals/modalBalance")
+
+@section Scripts
+{
+    <script src="~/js/profileScript.js"></script>
+}

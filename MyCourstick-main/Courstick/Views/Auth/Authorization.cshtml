@@ -1,0 +1,50 @@
+@using Courstick.Views.Auth
+@model AuthorizationModel
+@{
+    ViewData["Title"] = "Авторизация";
+}
+
+<div class="main_block_gray">
+    <div class="main_container">
+        <div class="login-container-wrapper">
+            <div class="login-container" >
+                <h2 class="title_login">Вход</h2>
+                <form method="post" asp-action="Authorization" id="login-form" class="login-form">
+                    <label class="input-wrapper" >
+                        <p>Логин</p>
+                        <input id="login" placeholder="Ваш Логин" class="input-form" type="text" required/>
+                    </label>
+                    <label class="input-wrapper">
+                        <p>Пароль</p>
+                        <input id="password" placeholder="Пароль" class="input-form" type="password" required/>
+                        <p id="pass-error">
+                            Неправильный формат почты
+                        </p>
+                    </label>
+                    
+                    <div class="under-form-links">
+                        <label class="saveme-checkbox">
+                            <input style="margin-right: 12px" type="checkbox"/>
+                            <p>
+                                Оставаться в сети
+                            </p>
+                        </label>
+                        <a href="">Забыли пароль?</a>
+                    </div>
+                    
+                    <input id="login-submit" type="submit" class="submit-form-button orange-button" placeholder="Войти"/>
+                    
+                </form>
+                <div class="under-form-links">
+                    <p>
+                        Нет аккаунта? <a asp-area="" asp-controller="Auth" asp-action="Registration">Зарегистрироваться</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/auth.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="~/css/AuthStyles.css" xmlns="http://www.w3.org/1999/html">

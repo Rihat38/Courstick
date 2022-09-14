@@ -1,0 +1,138 @@
+﻿@model Courstick.Dto.EditCourseDto
+@{
+    ViewData["Title"] = "Edit course";
+}
+
+<div class="main_block_colored">
+    <div class="main_container">
+        <div class="add-course-first-block">
+            <form method="post" asp-action="EditCourse">
+                <div>
+                    <h1>Изменение курса</h1>
+                </div>
+                <div class="course-image-wrapper">
+                    <div class="course-image-container-edit">
+                        @{
+                            if (Model?.Image is not null && Model?.Image.Length > 0)
+                            {
+                                var imreBase64Data = Convert.ToBase64String(Model?.Image.Select(i => (byte) i).ToArray());
+                                var imgDataURL = string.Format("data:image/jpg;base64,{0}", imreBase64Data);
+                                <img src="@imgDataURL" class="course-image"/>
+                            }
+                            else
+                            {
+                                <img src="" class="course-image"/>
+                            }
+                        }
+                    </div>
+                    <div class="upload-image-form">
+                        <label class="upload-image-form-label" for="img">Выберите обложку для курса</label>
+                        <input type="file" asp-for="Image" id="img" name="img" accept="image/*">
+                    </div>
+                </div>
+                <div class="course-image-wrapper">
+                    <label>
+                        <h1>Название курса</h1>
+                        <input type="text" placeholder="Название курса" required id="courseName" asp-for="Name" class="input-label"/>
+                    </label>
+                    <div class="inputs_container">
+                        <label>
+                            <h1 class="description-title">Краткое описание</h1>
+                            <input asp-for="SmallDescription" placeholder="Краткое описание" required id="smallDesc" required class="input-label input-desc"/>
+                        </label>
+                        <label>
+                            <h1 class="description-title">Описание</h1>
+                            <textarea required placeholder="Полное описание" required id="bigDesc" asp-for="Description" class="input-label input-desc"></textarea>
+                        </label>
+                    </div>
+
+                    <label>
+                        <h1 class="description-title">Цена</h1>
+                        <input placeholder="Цена в рублях" type="number" min="1" id="price" asp-for="Price" required class="input-label input-desc"/>
+                        <input type="hidden" asp-for="Id"/>
+                    </label>
+                </div>
+                @* @{ *@
+                @*     var counter = 0; *@
+                @* } *@
+                @* @if (Model?.Pages is not null) *@
+                @* { *@
+                @*     foreach (var lesson in Model.Pages) *@
+                @*     { *@
+                @*         counter++; *@
+                @*         <div id=@counter class="lesson-container"> *@
+                @*             <div class="lesson_info_container"> *@
+                @*                 <p id="lesson-info-@counter">@lesson.Movie</p> *@
+                @*             </div> *@
+                @*             <div> *@
+                @*                 <button id="change-button-@counter" class="medium-button orange-button change-button" onclick="event.preventDefault()"> *@
+                @*                     Изменить урок *@
+                @*                 </button> *@
+                @* *@
+                @*                 <button id="remove-button-@counter" class="medium-button border-button remove-button"> *@
+                @*                     Удалить урок *@
+                @*                 </button> *@
+                @*             </div> *@
+                @*         </div> *@
+                @*     } *@
+                @* } *@
+                
+                <div class="lessons-container">
+                    <div class="lessons"></div>
+                    <button class="orange-button big-button" id="add-lesson-button" style="margin-top: 15px">Добавить урок</button>
+                </div>
+
+                <input type="submit" id="add_course" class="orange-button big-button add-lesson-button" value="Сохранить"/>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <h2>
+            Выберите тип урока
+        </h2>
+        <div class="type-lesson_choose">
+            <button id="info_button" class="medium-button border-button">
+                Информативный
+            </button>
+            <button id="test_button" class="medium-button border-button" onclick="alert('В данный момент доступен только урок типа \'Информативный\'')">
+                Тест
+            </button>
+            <button id="video_button" class="medium-button border-button" onclick="alert('В данный момент доступен только урок типа \'Информативный\'')">
+                Видео
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div id="createLessonModal" class="modal">
+    <div class="modal-content">
+        <h2>
+            Введите данные
+        </h2>
+        <div class="type-lesson_choose">
+            <label>
+                Название
+                <input id="lesson-name-input" type="text"/>
+            </label>
+
+            <label>
+                Содержимое
+                <input id="lesson-content-input" type="text"/>
+            </label>
+
+            <input id="lessonSubmit" type="submit" class="orange-button big-button">
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="~/css/createCourseStyles.css" xmlns="http://www.w3.org/1999/html">
+
+@section Scripts
+{
+    <script src="~/js/editCourseScript.js"></script>
+}

@@ -1,0 +1,102 @@
+/Users/gadelshinrr/Desktop/courstick/Courstick/Infrastructure/bin/Debug/net6.0/Courstick.Infrastructure.deps.json
+/Users/gadelshinrr/Desktop/courstick/Courstick/Infrastructure/bin/Debug/net6.0/Courstick.Infrastructure.runtimeconfig.json
+/Users/gadelshinrr/Desktop/courstick/Courstick/Infrastructure/bin/Debug/net6.0/Courstick.Infrastructure.dll
+/Users/gadelshinrr/Desktop/courstick/Courstick/Infrastructure/bin/Debug/net6.0/Courstick.Infrastructure.pdb
+/Users/gadelshinrr/Desktop/courstick/Courstick/Infrastructure/bin/Debug/net6.0/Courstick.Core.dll
+/Users/gadelshinrr/Desktop/courstick/Courstick/Infrastructure/bin/Debug/net6.0/Courstick.Core.pdb
+/Users/gadelshinrr/Desktop/courstick/Courstick/Infrastructure/obj/Debug/net6.0/Courstick.Infrastructure.csproj.AssemblyReference.cache
+/Users/gadelshinrr/Desktop/courstick/Courstick/Infrastructure/obj/Debug/net6.0/Courstick.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gadelshinrr/Desktop/courstick/Courstick/Infrastructure/obj/Debug/net6.0/Courstick.Infrastructure.AssemblyInfoInputs.cache
+/Users/gadelshinrr/Desktop/courstick/Courstick/Infrastructure/obj/Debug/net6.0/Courstick.Infrastructure.AssemblyInfo.cs
+/Users/gadelshinrr/Desktop/courstick/Courstick/Infrastructure/obj/Debug/net6.0/Courstick.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/gadelshinrr/Desktop/courstick/Courstick/Infrastructure/obj/Debug/net6.0/Courstick.Infrastructure.csproj.CopyComplete
+/Users/gadelshinrr/Desktop/courstick/Courstick/Infrastructure/obj/Debug/net6.0/Courstick.Infrastructure.dll
+/Users/gadelshinrr/Desktop/courstick/Courstick/Infrastructure/obj/Debug/net6.0/refint/Courstick.Infrastructure.dll
+/Users/gadelshinrr/Desktop/courstick/Courstick/Infrastructure/obj/Debug/net6.0/Courstick.Infrastructure.pdb
+/Users/gadelshinrr/Desktop/courstick/Courstick/Infrastructure/obj/Debug/net6.0/Courstick.Infrastructure.genruntimeconfig.cache
+/Users/gadelshinrr/Desktop/courstick/Courstick/Infrastructure/obj/Debug/net6.0/ref/Courstick.Infrastructure.dll
+C:\Users\tagir\OneDrive\Документы\GitHub\courstick\Courstick\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\tagir\OneDrive\Документы\GitHub\courstick\Courstick\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tagir\OneDrive\Документы\GitHub\courstick\Courstick\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\tagir\OneDrive\Документы\GitHub\courstick\Courstick\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.AssemblyInfo.cs
+C:\Users\tagir\OneDrive\Документы\GitHub\courstick\Courstick\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\tagir\OneDrive\Документы\GitHub\courstick\Courstick\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.dll
+C:\Users\tagir\OneDrive\Документы\GitHub\courstick\Courstick\Infrastructure\obj\Debug\net6.0\refint\Courstick.Infrastructure.dll
+C:\Users\tagir\OneDrive\Документы\GitHub\courstick\Courstick\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.pdb
+C:\Users\tagir\OneDrive\Документы\GitHub\courstick\Courstick\Infrastructure\bin\Debug\net6.0\Courstick.Infrastructure.deps.json
+C:\Users\tagir\OneDrive\Документы\GitHub\courstick\Courstick\Infrastructure\bin\Debug\net6.0\Courstick.Infrastructure.runtimeconfig.json
+C:\Users\tagir\OneDrive\Документы\GitHub\courstick\Courstick\Infrastructure\bin\Debug\net6.0\Courstick.Infrastructure.dll
+C:\Users\tagir\OneDrive\Документы\GitHub\courstick\Courstick\Infrastructure\bin\Debug\net6.0\Courstick.Infrastructure.pdb
+C:\Users\tagir\OneDrive\Документы\GitHub\courstick\Courstick\Infrastructure\bin\Debug\net6.0\Courstick.Core.dll
+C:\Users\tagir\OneDrive\Документы\GitHub\courstick\Courstick\Infrastructure\bin\Debug\net6.0\Courstick.Core.pdb
+C:\Users\tagir\OneDrive\Документы\GitHub\courstick\Courstick\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.csproj.CopyComplete
+C:\Users\tagir\OneDrive\Документы\GitHub\courstick\Courstick\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.genruntimeconfig.cache
+C:\Users\tagir\OneDrive\Документы\GitHub\courstick\Courstick\Infrastructure\obj\Debug\net6.0\ref\Courstick.Infrastructure.dll
+C:\Users\artem\Desktop\Repositories\courstick\Courstick\Infrastructure\bin\Debug\net6.0\Courstick.Infrastructure.deps.json
+C:\Users\artem\Desktop\Repositories\courstick\Courstick\Infrastructure\bin\Debug\net6.0\Courstick.Infrastructure.runtimeconfig.json
+C:\Users\artem\Desktop\Repositories\courstick\Courstick\Infrastructure\bin\Debug\net6.0\Courstick.Infrastructure.dll
+C:\Users\artem\Desktop\Repositories\courstick\Courstick\Infrastructure\bin\Debug\net6.0\ref\Courstick.Infrastructure.dll
+C:\Users\artem\Desktop\Repositories\courstick\Courstick\Infrastructure\bin\Debug\net6.0\Courstick.Infrastructure.pdb
+C:\Users\artem\Desktop\Repositories\courstick\Courstick\Infrastructure\bin\Debug\net6.0\Courstick.Core.dll
+C:\Users\artem\Desktop\Repositories\courstick\Courstick\Infrastructure\bin\Debug\net6.0\Courstick.Core.pdb
+C:\Users\artem\Desktop\Repositories\courstick\Courstick\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\artem\Desktop\Repositories\courstick\Courstick\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\artem\Desktop\Repositories\courstick\Courstick\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\artem\Desktop\Repositories\courstick\Courstick\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.AssemblyInfo.cs
+C:\Users\artem\Desktop\Repositories\courstick\Courstick\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\artem\Desktop\Repositories\courstick\Courstick\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.csproj.CopyComplete
+C:\Users\artem\Desktop\Repositories\courstick\Courstick\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.dll
+C:\Users\artem\Desktop\Repositories\courstick\Courstick\Infrastructure\obj\Debug\net6.0\ref\Courstick.Infrastructure.dll
+C:\Users\artem\Desktop\Repositories\courstick\Courstick\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.pdb
+C:\Users\artem\Desktop\Repositories\courstick\Courstick\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.genruntimeconfig.cache
+C:\Users\tagir\OneDrive\Документы\GitHub\MyCourstick\MyCourstick\Infrastructure\bin\Debug\net6.0\Courstick.Infrastructure.deps.json
+C:\Users\tagir\OneDrive\Документы\GitHub\MyCourstick\MyCourstick\Infrastructure\bin\Debug\net6.0\Courstick.Infrastructure.runtimeconfig.json
+C:\Users\tagir\OneDrive\Документы\GitHub\MyCourstick\MyCourstick\Infrastructure\bin\Debug\net6.0\Courstick.Infrastructure.dll
+C:\Users\tagir\OneDrive\Документы\GitHub\MyCourstick\MyCourstick\Infrastructure\bin\Debug\net6.0\Courstick.Infrastructure.pdb
+C:\Users\tagir\OneDrive\Документы\GitHub\MyCourstick\MyCourstick\Infrastructure\bin\Debug\net6.0\Courstick.Core.dll
+C:\Users\tagir\OneDrive\Документы\GitHub\MyCourstick\MyCourstick\Infrastructure\bin\Debug\net6.0\Courstick.Core.pdb
+C:\Users\tagir\OneDrive\Документы\GitHub\MyCourstick\MyCourstick\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\tagir\OneDrive\Документы\GitHub\MyCourstick\MyCourstick\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tagir\OneDrive\Документы\GitHub\MyCourstick\MyCourstick\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\tagir\OneDrive\Документы\GitHub\MyCourstick\MyCourstick\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.AssemblyInfo.cs
+C:\Users\tagir\OneDrive\Документы\GitHub\MyCourstick\MyCourstick\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\tagir\OneDrive\Документы\GitHub\MyCourstick\MyCourstick\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.csproj.CopyComplete
+C:\Users\tagir\OneDrive\Документы\GitHub\MyCourstick\MyCourstick\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.dll
+C:\Users\tagir\OneDrive\Документы\GitHub\MyCourstick\MyCourstick\Infrastructure\obj\Debug\net6.0\refint\Courstick.Infrastructure.dll
+C:\Users\tagir\OneDrive\Документы\GitHub\MyCourstick\MyCourstick\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.pdb
+C:\Users\tagir\OneDrive\Документы\GitHub\MyCourstick\MyCourstick\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.genruntimeconfig.cache
+C:\Users\tagir\OneDrive\Документы\GitHub\MyCourstick\MyCourstick\Infrastructure\obj\Debug\net6.0\ref\Courstick.Infrastructure.dll
+C:\Users\danil\Desktop\MyCourstick-main\Infrastructure\bin\Debug\net6.0\Courstick.Infrastructure.deps.json
+C:\Users\danil\Desktop\MyCourstick-main\Infrastructure\bin\Debug\net6.0\Courstick.Infrastructure.runtimeconfig.json
+C:\Users\danil\Desktop\MyCourstick-main\Infrastructure\bin\Debug\net6.0\Courstick.Infrastructure.dll
+C:\Users\danil\Desktop\MyCourstick-main\Infrastructure\bin\Debug\net6.0\Courstick.Infrastructure.pdb
+C:\Users\danil\Desktop\MyCourstick-main\Infrastructure\bin\Debug\net6.0\Courstick.Core.dll
+C:\Users\danil\Desktop\MyCourstick-main\Infrastructure\bin\Debug\net6.0\Courstick.Core.pdb
+C:\Users\danil\Desktop\MyCourstick-main\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\danil\Desktop\MyCourstick-main\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danil\Desktop\MyCourstick-main\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\danil\Desktop\MyCourstick-main\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.AssemblyInfo.cs
+C:\Users\danil\Desktop\MyCourstick-main\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\danil\Desktop\MyCourstick-main\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.csproj.CopyComplete
+C:\Users\danil\Desktop\MyCourstick-main\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.dll
+C:\Users\danil\Desktop\MyCourstick-main\Infrastructure\obj\Debug\net6.0\refint\Courstick.Infrastructure.dll
+C:\Users\danil\Desktop\MyCourstick-main\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.pdb
+C:\Users\danil\Desktop\MyCourstick-main\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.genruntimeconfig.cache
+C:\Users\danil\Desktop\MyCourstick-main\Infrastructure\obj\Debug\net6.0\ref\Courstick.Infrastructure.dll
+C:\Users\tagir\OneDrive\Рабочий стол\MyCourstick-main\Infrastructure\bin\Debug\net6.0\Courstick.Infrastructure.deps.json
+C:\Users\tagir\OneDrive\Рабочий стол\MyCourstick-main\Infrastructure\bin\Debug\net6.0\Courstick.Infrastructure.runtimeconfig.json
+C:\Users\tagir\OneDrive\Рабочий стол\MyCourstick-main\Infrastructure\bin\Debug\net6.0\Courstick.Infrastructure.dll
+C:\Users\tagir\OneDrive\Рабочий стол\MyCourstick-main\Infrastructure\bin\Debug\net6.0\Courstick.Infrastructure.pdb
+C:\Users\tagir\OneDrive\Рабочий стол\MyCourstick-main\Infrastructure\bin\Debug\net6.0\Courstick.Core.dll
+C:\Users\tagir\OneDrive\Рабочий стол\MyCourstick-main\Infrastructure\bin\Debug\net6.0\Courstick.Core.pdb
+C:\Users\tagir\OneDrive\Рабочий стол\MyCourstick-main\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\tagir\OneDrive\Рабочий стол\MyCourstick-main\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tagir\OneDrive\Рабочий стол\MyCourstick-main\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\tagir\OneDrive\Рабочий стол\MyCourstick-main\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.AssemblyInfo.cs
+C:\Users\tagir\OneDrive\Рабочий стол\MyCourstick-main\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\tagir\OneDrive\Рабочий стол\MyCourstick-main\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.csproj.CopyComplete
+C:\Users\tagir\OneDrive\Рабочий стол\MyCourstick-main\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.dll
+C:\Users\tagir\OneDrive\Рабочий стол\MyCourstick-main\Infrastructure\obj\Debug\net6.0\refint\Courstick.Infrastructure.dll
+C:\Users\tagir\OneDrive\Рабочий стол\MyCourstick-main\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.pdb
+C:\Users\tagir\OneDrive\Рабочий стол\MyCourstick-main\Infrastructure\obj\Debug\net6.0\Courstick.Infrastructure.genruntimeconfig.cache
+C:\Users\tagir\OneDrive\Рабочий стол\MyCourstick-main\Infrastructure\obj\Debug\net6.0\ref\Courstick.Infrastructure.dll

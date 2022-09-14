@@ -1,0 +1,27 @@
+@model Courstick.Core.Dto.CourseDto
+<link rel="stylesheet" href="~/css/uiStyles/modalStyles/defaultModalStyles.css"/>
+
+<div id="modal">
+    <div class="modal-content">
+        <div class="modal_first-row">
+            <h2>
+                Приесоединиться к курсу
+            </h2>
+
+            <button id="modal_close_button">
+                X
+            </button>
+        </div>
+
+        <h2>
+            @Model.Price ₽
+        </h2>
+        <form method="post" asp-action="BuyCourse">
+            <input type="hidden" asp-for="@Model.CourseId"/>
+            <input type="submit" class="orange-button big-button" value="Купить">
+        </form>
+    </div>
+</div>
+
+
+

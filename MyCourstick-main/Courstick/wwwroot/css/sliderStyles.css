@@ -1,0 +1,35 @@
+.swiper-custom-container {
+    max-width: 1230px;
+    position: relative;
+
+}
+
+.swiper-button-next {
+    position: absolute; !important;
+    height: 32px !important;
+    width: 32px !important;
+    background-image: url("./../assets/nextArrow.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 5% !important;
+}
+
+.swiper-button-next:after {
+    content: none !important;
+}
+
+.swiper-button-prev {
+    position: absolute; !important;
+
+    height: 32px !important;
+    width: 32px !important;
+    background-image: url("./../assets/Line.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    fill: #F75E05;
+    content: none;
+}
+
+.swiper-button-prev:after {
+    content: none !important;
+}

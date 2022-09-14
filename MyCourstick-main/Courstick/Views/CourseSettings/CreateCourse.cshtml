@@ -1,0 +1,106 @@
+@model Courstick.Core.Dto.CreateCourseDto
+@{
+    ViewData["Title"] = "Create course";
+}
+
+<div class="main_block_colored">
+    <div class="main_container">
+        <div class="add-course-first-block">
+            <form enctype="multipart/form-data">
+                <div class="course-image-wrapper">
+                    <div class="course-image-container">
+                        <img src="" class="course-image"/>
+                    </div>
+                    <div class="upload-image-form">
+                        <label class="upload-image-form-label" for="img">Выберите обложку для курса</label>
+                        <input class="" type="file" asp-for="Image" id="img" name="img" accept="image/*">
+                    </div>
+                </div>
+                <div class="course-image-wrapper">
+                    <label>
+                        <h1>
+                            Название курса
+                        </h1>
+                        <input type="text" required id="courseName" asp-for="Name" class="input-label"/>
+                    </label>
+                    <div class="inputs_container">
+                        <label>
+                            <h1 class="description-title">
+                                Краткое описание
+                            </h1>
+                            <input asp-for="SmallDescription" required id="smallDesc" class="input-label input-desc"/>
+                        </label>
+                        <label>
+                            <h1 class="description-title">
+                                Описание
+                            </h1>
+                            <textarea required placeholder="Описание" id="bigDesc" asp-for="Description" class="input-label input-desc"></textarea>
+                        </label>
+                    </div>
+
+                    <label>
+                        <h1 class="description-title">
+                            Цена
+                        </h1>
+                        <input placeholder="Цена в рублях" type="number" min="1" id="price" asp-for="Price" required class="input-label input-desc"/>
+                    </label>
+                </div>
+                <div class="lessons-container">
+                    <button class="orange-button big-button" id="add-lesson-button">Добавить урок</button>
+                    <div class="lessons">
+                    </div>
+                </div>
+                <input id="add_course" type="submit" class="orange-button big-button add-lesson-button" value="Добавить курс"/>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <h2>
+            Выберите тип урока
+        </h2>
+        <div class="type-lesson_choose">
+            <button id="info_button" class="medium-button border-button">
+                Информативный
+            </button>
+            <button id="test_button" class="medium-button border-button" onclick="alert('В данный момент доступен только урок типа \'Информативный\'')">
+                Тест
+            </button>
+            <button id="video_button" class="medium-button border-button" onclick="alert('В данный момент доступен только урок типа \'Информативный\'')">
+                Видео
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div id="createLessonModal" class="modal">
+    <div class="modal-content">
+        <h2>
+            Введите данные
+        </h2>
+        <div class="type-lesson_choose">
+            <label>
+                Название
+                <input id="lesson-name-input" type="text"/>
+            </label>
+
+            <label>
+                Содержимое
+                <input id="lesson-content-input" type="text"/>
+            </label>
+
+            <input id="lessonSubmit" type="submit" class="orange-button big-button">
+        </div>
+    </div>
+</div>
+
+
+<link rel="stylesheet" href="~/css/createCourseStyles.css" xmlns="http://www.w3.org/1999/html">
+
+@section Scripts
+{
+    <script src="~/js/createCourseScript.js"></script>
+}

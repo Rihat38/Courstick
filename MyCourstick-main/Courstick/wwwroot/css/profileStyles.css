@@ -1,0 +1,133 @@
+a {
+    color: rgba(255, 63, 58, 1);
+}
+
+.button-links {
+    color: rgba(255, 63, 58, 1);
+    background: none;
+    border: none;
+}
+
+li {
+    margin-top: 7px;
+}
+li:first-child {
+    margin: 0;
+}
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.profile-label {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.user-info-container {
+    display: flex;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #eaeaea;
+    margin: 20px 0 0 40px;
+    width: 100%;
+}
+
+.extra-profile-container {
+    margin-top: 20px;
+}
+
+.profile-settings {
+    padding: 25px 26px;
+    border: 1px solid #E5E8ED;
+
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    background: white;
+}
+
+.profile-course {
+    display: flex;
+    flex-direction: column;
+}
+
+.courses-first-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-container-profile {
+    height: 30px;
+    border: 1px solid rgba(255, 63, 58, 1);
+    background: white;
+    border-radius: 20px;
+    max-width: 300px;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.cards-container {
+    display: grid;
+    grid-column-gap: 30px;
+    grid-template-columns: repeat(auto-fill, 390px)
+}
+
+.button-links {
+    color: rgba(255, 63, 58, 1);
+    background: none;
+    border: none;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 700px) {
+    .profile-label {
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+    .user-info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .user-info {
+        display: none;
+    }
+    
+    .profile-settings {
+        margin-top: 15px;
+        max-width: 70%;
+        margin: 0 auto;
+    }
+    
+    .profile-course {
+        align-items: center;
+    }
+    
+    .courses-first-row {
+        margin-top: 15px;
+        flex-direction: column;
+    }
+    
+    .cards-container {
+        margin-top: 10px;
+    }
+}

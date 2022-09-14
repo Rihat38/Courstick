@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+}
+
+form {
+    margin: 10px;
+}
+
+.course-image-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+
+.course-image {
+    width: 500px;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.upload-image-form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-image-container {
+    flex-basis: 600px;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    background: gray;
+}
+
+.course-image-container-edit {
+    flex-basis: 600px;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.upload-image-form-label {
+    color: #1E212C;
+    font-size: 20px;
+}
+
+label {
+    width: 100%;
+}
+
+input::-webkit-file-upload-button {
+    border: none;
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+    color: white;
+    padding: 10px 32px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+input::-webkit-file-upload-button:hover {
+    background: linear-gradient(55.95deg, #e03631 0%, #ce4904 100%);
+}
+
+.add-course-first-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.input-label {
+    display: flex;
+    padding: 10px 15px;
+    border: 1px solid #ce4904;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.input-desc {
+    font-size: 12px;
+    height: 90px;
+    width: 100%;
+}
+
+.input-desc::placeholder {
+    font-size: 25px;
+    color: #787A80;
+}
+
+
+.course-image-wrapper:last-child {
+    display: flex;
+    flex-basis: 50%;
+    margin-left: 30px;
+}
+
+.description-title {
+    margin-top: 15px;
+}
+
+.lessons-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#add-lesson-button {
+    max-width: 200px;
+}
+
+.added-lesson-list {
+    margin-top: 30px;
+    list-style-type: none;
+    max-width: 800px;
+}
+
+.added-lesson-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #1E212C;
+    border-radius: 4px;
+    border: 2px solid #1E212C;
+    padding: 10px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px !important;
+    border: 1px solid #888;
+    width: 40% !important;
+    height: 80% !important;
+    border-radius: 10px;
+
+
+}
+
+.type-lesson_choose {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.lesson-type {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.checkbox-type {
+    margin-left: 5px;
+}
+
+.buttons_modal {
+    display: flex;
+    position: relative;
+    bottom: 0;
+    justify-content: space-between;
+}
+
+.lessons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.inputs_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    justify-content: space-between;
+}
+
+.lesson-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #787A80;
+    padding: 5px 8px;
+    border-radius: 3px;
+    justify-content: space-between;
+}
+
+#Price {
+    width: 100px;
+    height: 30px;
+}
+
+#createLessonModal {
+    display: none;
+}

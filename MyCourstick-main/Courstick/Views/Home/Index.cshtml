@@ -1,0 +1,107 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section Styles
+{
+    <link rel="stylesheet" href="~/css/sliderStyles.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/homepageStyles.css" asp-append-version="true"/>
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+}
+
+<div class="main_block_colored">
+    <div class="main_container">
+        <div class="content-first-block">
+            <div class="info-container-first-block">
+                <p class="title_first_block">Учись вместе с Courstick онлайн курсами</p>
+                <div class="buttons_container_first-block">
+                    <a asp-area="" asp-controller="Home" asp-action="About" class="big-button border-button default_font_settings">
+                        О нас
+                    </a>
+                    <a asp-area="" asp-controller="Search" asp-action="Search" class="big-button orange-button default_font_settings">
+                        Поиск курсов
+                    </a>
+                </div>
+            </div>
+            <div>
+                <img class="people-img" src="assets/illustration%20(1).svg"/>
+            </div>
+        </div>
+        <ul class="first-block-underline">
+            <li class="first-block-underline_item default_font_settings">
+                <h2 class="underline-item-label">1200</h2>
+                <p class="underline-item-info">Студентов</p>
+            </li>
+            <li class="first-block-underline_item default_font_settings">
+                <h2 class="underline-item-label">80</h2>
+                <p class="underline-item-info">Курсов</p>
+            </li>
+            <li class="first-block-underline_item default_font_settings">
+                <h2 class="underline-item-label">2</h2>
+                <p class="underline-item-info">Преподавателя</p>
+            </li>
+            <li class="first-block-underline_item default_font_settings">
+                <h2 class="underline-item-label">0</h2>
+                <p class="underline-item-info">Лет опыта</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="main_block_white">
+    <div class="main_container">
+        <div class="courses-block">
+            <p class="subline-courses">Готовы к учебе?</p>
+            <div class="courses-title">
+                <h1>Курсы</h1>
+
+                <a asp-area="" asp-controller="Search" asp-action="Search" class="big-button border-button default_font_settings">
+                    Просмотреть все курсы
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="main_block_gray">
+    <div class="main_container">
+        <div class="our-team-container">
+            <p class="subline-courses">Все лучшие тьюторы здесь</p>
+            <h1 style="margin-top: 6px">Наша команда</h1>
+
+            <div class="slider-container">
+                <div class="slider-element">
+                    <img class="img-slider" src="~/assets/1141e3214a1146cfa23e94fb3049e271_ce_640x399x0x255_cropped_666x444.jpeg"/>
+                    <p class="default_font_settings tutor-name">Настя</p>
+                    <p class="default_font_settings tutor-post">Founder and CEO</p>
+                </div>
+                <div class="slider-element">
+                    <img class="img-slider" src="~/assets/1141e3214a1146cfa23e94fb3049e271_ce_640x399x0x255_cropped_666x444.jpeg"/>
+                    <p class="default_font_settings tutor-name">Ризван</p>
+                    <p class="default_font_settings tutor-post">Founder and CEO</p>
+                </div>
+                <div class="slider-element">
+                    <img class="img-slider" src="~/assets/1141e3214a1146cfa23e94fb3049e271_ce_640x399x0x255_cropped_666x444.jpeg"/>
+                    <p class="default_font_settings tutor-name">Артем</p>
+                    <p class="default_font_settings tutor-post">Founder and CEO</p>
+                </div>
+                <div class="slider-element">
+                    <img class="img-slider" src="~/assets/1141e3214a1146cfa23e94fb3049e271_ce_640x399x0x255_cropped_666x444.jpeg"/>
+                    <p class="default_font_settings tutor-name">Тагир</p>
+                    <p class="default_font_settings tutor-post">Founder and CEO</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="~/js/homePageScript.js"></script>
+}
