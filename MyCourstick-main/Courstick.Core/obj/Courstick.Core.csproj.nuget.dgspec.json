@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tagir\\OneDrive\\Рабочий стол\\MyCourstick-main\\Courstick.Core\\Courstick.Core.csproj": {}
+    "C:\\Users\\tagir\\OneDrive\\Документы\\GitHub\\CourstickToEarnPoints\\ToEarnPoints\\MyCourstick-main\\Courstick.Core\\Courstick.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tagir\\OneDrive\\Рабочий стол\\MyCourstick-main\\Courstick.Core\\Courstick.Core.csproj": {
+    "C:\\Users\\tagir\\OneDrive\\Документы\\GitHub\\CourstickToEarnPoints\\ToEarnPoints\\MyCourstick-main\\Courstick.Core\\Courstick.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tagir\\OneDrive\\Рабочий стол\\MyCourstick-main\\Courstick.Core\\Courstick.Core.csproj",
+        "projectUniqueName": "C:\\Users\\tagir\\OneDrive\\Документы\\GitHub\\CourstickToEarnPoints\\ToEarnPoints\\MyCourstick-main\\Courstick.Core\\Courstick.Core.csproj",
         "projectName": "Courstick.Core",
-        "projectPath": "C:\\Users\\tagir\\OneDrive\\Рабочий стол\\MyCourstick-main\\Courstick.Core\\Courstick.Core.csproj",
+        "projectPath": "C:\\Users\\tagir\\OneDrive\\Документы\\GitHub\\CourstickToEarnPoints\\ToEarnPoints\\MyCourstick-main\\Courstick.Core\\Courstick.Core.csproj",
         "packagesPath": "C:\\Users\\tagir\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tagir\\OneDrive\\Рабочий стол\\MyCourstick-main\\Courstick.Core\\obj\\",
+        "outputPath": "C:\\Users\\tagir\\OneDrive\\Документы\\GitHub\\CourstickToEarnPoints\\ToEarnPoints\\MyCourstick-main\\Courstick.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tagir\\AppData\\Roaming\\NuGet\\NuGet.Config",

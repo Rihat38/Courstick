@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oMXhu5fWHxpNBoOQMMSGoOdNyPW0C7Z3MXUMEG5O8IVZkQbj/fx4jvqm+Fr2JRU5wOWtVCEyy04rVPy2se8G/w==",
+  "dgSpecHash": "1HTqGbBQ9rxD/MZBJqAK4ZkNbcwuJvhFzrOPvZNyKzhz0DYIl2ENS/FVOgzoeACo1jQoic5qRd0IvMhtLZHdYg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tagir\\OneDrive\\Рабочий стол\\MyCourstick-main\\Courstick.Core\\Courstick.Core.csproj",
+  "projectFilePath": "C:\\Users\\tagir\\OneDrive\\Документы\\GitHub\\CourstickToEarnPoints\\ToEarnPoints\\MyCourstick-main\\Courstick.Core\\Courstick.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tagir\\.nuget\\packages\\entityframework\\6.1.0\\entityframework.6.1.0.nupkg.sha512",
     "C:\\Users\\tagir\\.nuget\\packages\\microsoft.aspnet.identity.core\\2.2.3\\microsoft.aspnet.identity.core.2.2.3.nupkg.sha512",
